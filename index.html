@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>うな重｜大分市 鰻専門店</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#16120E;
+    --black-2:#211A14;
+    --black-3:#2B2219;
+    --gold:#B8933E;
+    --gold-light:#D9BE7E;
+    --cream:#F3EAD9;
+    --muted:#A6947A;
+    --line:#3A2F22;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--black);
+    color:var(--cream);
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-weight:300;
+  }
+  html{ scroll-behavior:smooth; }
+  .font-mincho{ font-family:'Shippori Mincho', serif; }
+
+  .kicker{
+    font-size:11px; letter-spacing:0.4em; font-weight:700; color:var(--gold);
+    margin-bottom:10px;
+  }
+  .hairline{ height:1px; background:linear-gradient(90deg, var(--gold), transparent); }
+  .hairline-center{ height:1px; width:48px; background:var(--gold); margin:0 auto; }
+
+  .seal{
+    width:56px; height:56px; border-radius:9999px;
+    border:1.5px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Shippori Mincho', serif; font-weight:800; font-size:22px; color:var(--gold);
+  }
+
+  .tel-btn{
+    display:inline-flex; align-items:center; gap:6px;
+    border:1px solid var(--gold); color:var(--gold); font-weight:500; font-size:12px;
+    padding:8px 14px; border-radius:999px; letter-spacing:0.05em;
+  }
+
+  .tier-card{
+    border:1px solid var(--line);
+    background:linear-gradient(180deg, var(--black-2), var(--black));
+    padding:28px 20px;
+    text-align:center;
+    position:relative;
+  }
+  .tier-card.featured{
+    border-color:var(--gold);
+    box-shadow: 0 0 0 1px var(--gold) inset;
+  }
+  .tier-name{ font-family:'Shippori Mincho', serif; font-size:22px; font-weight:700; color:var(--gold-light); }
+  .tier-price{ font-family:'Shippori Mincho', serif; font-size:15px; color:var(--cream); margin-top:10px; letter-spacing:0.05em; }
+  .tier-desc{ font-size:12px; color:var(--muted); margin-top:10px; line-height:1.8; }
+
+  .menu-line{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:16px 0; border-bottom:1px solid var(--line);
+    gap:12px;
+  }
+  .menu-line:last-child{ border-bottom:none; }
+  .menu-name{ font-size:14.5px; font-weight:500; color:var(--cream); }
+  .menu-desc{ font-size:11px; color:var(--muted); margin-top:4px; }
+  .menu-price{ font-family:'Shippori Mincho', serif; font-size:14px; color:var(--gold-light); white-space:nowrap; }
+
+  .info-row{ display:flex; gap:20px; padding:16px 0; border-bottom:1px solid var(--line); }
+  .info-row:last-child{ border-bottom:none; }
+  .info-label{ width:76px; flex-shrink:0; font-size:11px; color:var(--gold); letter-spacing:0.1em; padding-top:2px; }
+  .info-value{ font-size:14px; line-height:1.8; color:var(--cream); font-weight:300; }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="fixed top-0 inset-x-0 z-50" style="background:rgba(22,18,14,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);">
+  <div class="flex items-center justify-between px-5 py-3">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="seal">鰻</span>
+      <span class="font-mincho text-lg tracking-wide">うな重</span>
+    </a>
+    <a href="tel:0975381850" class="tel-btn">097-538-1850</a>
+  </div>
+  <nav class="flex text-[10.5px] tracking-widest text-[var(--muted)] px-5 pb-3 gap-5 overflow-x-auto">
+    <a href="#about" class="whitespace-nowrap">こだわり</a>
+    <a href="#menu" class="whitespace-nowrap">お品書き</a>
+    <a href="#info" class="whitespace-nowrap">店舗情報</a>
+    <a href="#access" class="whitespace-nowrap">アクセス</a>
+  </nav>
+</header>
+
+<div id="top" class="h-[92px]"></div>
+
+<!-- ============ HERO ============ -->
+<section class="relative">
+  <img src="https://images.unsplash.com/photo-1763627719044-5d1d6a6b809c?q=80&w=1200&auto=format&fit=crop" alt="うな重 鰻料理" class="w-full h-[56vh] object-cover" style="filter:saturate(0.9) brightness(0.75);">
+  <div class="absolute inset-0" style="background:linear-gradient(0deg, rgba(22,18,14,0.95) 0%, rgba(22,18,14,0.25) 55%, rgba(22,18,14,0.5) 100%);"></div>
+  <div class="absolute bottom-8 left-0 right-0 px-6 text-center">
+    <p class="text-[11px] tracking-[0.3em] mb-4" style="color:var(--gold-light);">OITA · MAIZURU-CHO</p>
+    <h1 class="font-mincho text-[34px] leading-snug">一匹に、真心を込めて。</h1>
+    <div class="hairline-center mt-5"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="px-6 py-16">
+  <p class="kicker">OUR COMMITMENT</p>
+  <h2 class="font-mincho text-2xl mb-6 leading-relaxed">職人の手で、一匹ずつ丁寧に。</h2>
+  <p class="text-[14px] leading-8 font-light text-[var(--cream)]/90">
+    厳選した鰻を、注文を受けてから一匹ずつ丁寧に焼き上げます。備長炭の遠赤外線でじっくりと火を通し、皮はぱりっと、身はふっくらと。
+    代々受け継がれてきたタレと焼きの技術で、大分の地でこの味を守り続けています。
+  </p>
+</section>
+
+<div class="hairline mx-6"></div>
+
+<!-- ============ ATMOSPHERE ============ -->
+<section class="px-6 py-16">
+  <p class="kicker">ATMOSPHERE</p>
+  <h2 class="font-mincho text-2xl mb-6 leading-relaxed">静けさの中で味わう、特別な時間</h2>
+  <p class="text-[14px] leading-8 font-light text-[var(--cream)]/90">
+    完全禁煙の落ち着いた空間で、小上がり席とテーブル席をご用意しております。慶事やご接待、ご家族での大切な一席にも安心してお使いいただけます。
+  </p>
+</section>
+
+<div class="hairline mx-6"></div>
+
+<!-- ============ 御料理 ============ -->
+<section id="menu" class="px-6 py-16">
+  <p class="kicker">お料理</p>
+  <h2 class="font-mincho text-2xl mb-8 leading-relaxed">御料理</h2>
+
+  <div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うな重</p>
+        <p class="menu-desc">竹 2,000円　松 2,900円　特 4,100円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">肝すい</p></div>
+      <p class="menu-price">200円</p>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">蒲焼き定食</p>
+        <p class="menu-desc">竹 2,200円　松 3,100円　特 4,300円（肝すい付）</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うな重二段詰</p>
+        <p class="menu-desc">竹 3,500円　松 4,500円（肝すい付）</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">特製定食</p>
+        <p class="menu-desc">竹 4,500円　松 5,500円<br>うなぎ蒲焼・うざく・肝すい・うなぎ白焼き・香の物・ご飯（少しお時間をいただきます）</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">鰻せいろむし</p><p class="menu-desc">肝すい付</p></div>
+      <p class="menu-price">3,000円</p>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">ひつまぶし</p>
+        <p class="menu-desc">3,500円　特 5,800円（肝すい付）</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">鰻玉重</p></div>
+      <p class="menu-price">1,800円</p>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うなぎ蒲焼き</p>
+        <p class="menu-desc">竹 1,800円　松 2,700円　特 3,900円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うなぎ白焼き</p>
+        <p class="menu-desc">竹 1,800円　松 2,700円　特 3,900円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">うざく</p></div>
+      <p class="menu-price">900円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">うまき</p></div>
+      <p class="menu-price">1,300円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">肝焼き</p></div>
+      <p class="menu-price">1,300円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">ほねせん</p></div>
+      <p class="menu-price">400円</p>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うなぎ刺身</p>
+        <p class="menu-desc">湯引きを施しておりますので、安心してお召し上がりいただけます</p>
+      </div>
+      <p class="menu-price">1,600円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">もろキュウ</p></div>
+      <p class="menu-price">400円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">枝豆</p></div>
+      <p class="menu-price">400円</p>
+    </div>
+  </div>
+</section>
+
+<div class="hairline mx-6"></div>
+
+<!-- ============ 御飲物 ============ -->
+<section class="px-6 py-16">
+  <p class="kicker">DRINK</p>
+  <h2 class="font-mincho text-2xl mb-8 leading-relaxed">御飲物</h2>
+
+  <div>
+    <div class="menu-line">
+      <div><p class="menu-name">瓶ビール</p></div>
+      <p class="menu-price">600円</p>
+    </div>
+    <div class="menu-line">
+      <div><p class="menu-name">ノンアルコールビール</p></div>
+      <p class="menu-price">400円</p>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">日本酒</p>
+        <p class="menu-desc">剣菱 500円　西の関 500円　う酒 1,000円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">芋焼酎</p>
+        <p class="menu-desc">黒霧島（20度）450円　昇陽（25度）600円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">麦焼酎</p>
+        <p class="menu-desc">二階堂（20度）450円　どっとん（20度）450円　右衛門七（20度）600円<br>銀座のすずめ（25度）600円　耶馬美人（20度）700円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">米焼酎</p>
+        <p class="menu-desc">耶馬美人（20度）700円　耶馬美人（25度）800円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">ソフトドリンク</p>
+        <p class="menu-desc">オレンジジュース 300円　コーラ 300円　コーラ・ゼロ 300円　ウーロン茶 300円</p>
+      </div>
+    </div>
+  </div>
+  <p class="text-[11px] text-[var(--muted)] mt-6 leading-6">
+    ※ 価格は全て税込みでございます。<br>
+    ※ 平日のお昼は食後のコーヒーをサービスいたします。お急ぎのお客様はお声掛けください。
+  </p>
+</section>
+
+<div class="hairline mx-6"></div>
+
+<!-- ============ お持ち帰り ============ -->
+<section class="px-6 py-16">
+  <p class="kicker">TAKEOUT</p>
+  <h2 class="font-mincho text-2xl mb-8 leading-relaxed">お持ち帰り</h2>
+
+  <div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うな重</p>
+        <p class="menu-desc">竹 2,100円　松 3,000円　特 4,200円</p>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div>
+        <p class="menu-name">うな重二段詰</p>
+        <p class="menu-desc">竹 3,600円　松 4,600円（折代込）</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 p-5" style="border:1px solid var(--line);">
+    <p class="text-[12.5px] font-medium" style="color:var(--gold-light);">お電話でご注文承ります</p>
+    <p class="text-[12px] text-[var(--muted)] mt-2 leading-6">蒲焼・白焼きのお持ち帰りも承っております。お待たせしないよう焼き上げてご用意いたします。</p>
+  </div>
+</section>
+
+<div class="hairline mx-6"></div>
+
+<!-- ============ STORE INFO ============ -->
+<section id="info" class="px-6 py-16">
+  <p class="kicker">SHOP INFO</p>
+  <h2 class="font-mincho text-2xl mb-8 leading-relaxed">店舗情報</h2>
+
+  <div class="border-t" style="border-color:var(--line);">
+    <div class="info-row"><span class="info-label">店名</span><span class="info-value">うな重</span></div>
+    <div class="info-row"><span class="info-label">住所</span><span class="info-value">〒870-0044<br>大分県大分市舞鶴町1丁目1-18</span></div>
+    <div class="info-row"><span class="info-label">電話</span><span class="info-value"><a href="tel:0975381850" class="underline">097-538-1850</a></span></div>
+    <div class="info-row"><span class="info-label">営業時間</span><span class="info-value">ランチ　11:30〜14:00（月・火・木・土）<br>ディナー　17:00〜20:00（月・火・木〜日・祝）</span></div>
+    <div class="info-row"><span class="info-label">定休日</span><span class="info-value">毎週水曜日</span></div>
+    <div class="info-row"><span class="info-label">お席</span><span class="info-value">小上がり席・テーブル席（完全禁煙）</span></div>
+    <div class="info-row"><span class="info-label">駐車場</span><span class="info-value">店舗前に8台程度（満車時は隣接コインパーキングをご利用ください）</span></div>
+    <div class="info-row"><span class="info-label">アクセス</span><span class="info-value">大分駅より徒歩約16分／お車で約6分</span></div>
+  </div>
+</section>
+
+<!-- ============ ACCESS / MAP ============ -->
+<section id="access" class="px-6 pb-20">
+  <a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%88%86%E7%9C%8C%E5%A4%A7%E5%88%86%E5%B8%82%E8%88%9E%E9%B6%B4%E7%94%BA1-1-18" target="_blank" rel="noopener" class="block overflow-hidden" style="border:1px solid var(--line);">
+    <iframe
+      src="https://www.google.com/maps?q=大分県大分市舞鶴町1-1-18&output=embed"
+      class="w-full h-56 pointer-events-none grayscale"
+      style="filter:invert(0.9) grayscale(1) brightness(0.9);"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </a>
+  <p class="text-center text-xs text-[var(--muted)] mt-3">タップして地図アプリで開く</p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 py-12 text-center" style="border-top:1px solid var(--line); background:var(--black-2);">
+  <div class="seal mx-auto mb-4">鰻</div>
+  <p class="font-mincho text-lg mb-2">うな重</p>
+  <p class="text-[11px] text-[var(--muted)] mb-6">大分県大分市舞鶴町1-1-18</p>
+  <nav class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-[11px] text-[var(--muted)] mb-6">
+    <a href="#top">トップ</a>
+    <a href="#about">こだわり</a>
+    <a href="#menu">お品書き</a>
+    <a href="#info">店舗情報</a>
+    <a href="#access">アクセス</a>
+  </nav>
+  <p class="text-[10px] text-[var(--muted)]">© うな重 All rights reserved.</p>
+</footer>
+
+</body>
+</html>
